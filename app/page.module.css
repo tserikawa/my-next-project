@@ -34,6 +34,74 @@
   z-index: -1; /* 要素を他の要素の背面に配置 */
 }
 
+.news {
+  position: relative; /* 子要素の位置を基準にするために相対位置を設定 */
+  background-color: #fff; /* 背景色を白に設定 */
+  width: 840px; /* 幅を840pxに設定 */
+  margin: -40px auto 0; /* 上に-40px、下に0、左右にautoのマージンを設定 */
+  padding: 24px 40px; /* 上下に24px、左右に40pxのパディングを設定 */
+  border-radius: var(--border-radius); /* 角丸を変数で設定 */
+}
+
+.newsTitle {
+  font-size: 1.5rem; /* フォントサイズを1.5remに設定 */
+}
+
+.list {
+  border-bottom: 1px solid var(--color-border-light); /* 下線を1pxの実線で設定 */
+}
+
+.list:last-child {
+  border-bottom: none; /* 最後の要素の下線を削除 */
+}
+
+.link {
+  display: flex; /* フレックスボックスレイアウトを使用 */
+  align-items: flex-start; /* 子要素を縦方向の上端に揃える */
+  gap: 40px; /* 子要素間の間隔を40pxに設定 */
+  padding: 24px 0; /* 上下に24pxのパディングを設定 */
+}
+
+.image {
+  width: 200px; /* 幅を200pxに設定 */
+  height: auto; /* 高さを自動に設定 */
+  border-radius: var(--border-radius); /* 角丸を変数で設定 */
+}
+
+.newsItemTitle {
+  font-size: 1.1rem; /* フォントサイズを1.1remに設定 */
+  font-weight: bold; /* フォントの太さを太字に設定 */
+  margin-bottom: 0.5rem; /* 下に0.5remのマージンを設定 */
+}
+
+.meta {
+  display: flex; /* フレックスボックスレイアウトを使用 */
+  align-items: center; /* 子要素を縦方向の中央に揃える */
+  gap: 16px; /* 子要素間の間隔を16pxに設定 */
+}
+
+.tag {
+  background-color: var(--color-bg-sub); /* 背景色をサブカラーに設定 */
+  padding: 4px 12px; /* 上下に4px、左右に12pxのパディングを設定 */
+  border-radius: var(--border-radius); /* 角丸を変数で設定 */
+  white-space: nowrap; /* テキストを折り返さないように設定 */
+  font-size: 1rem; /* フォントサイズを1remに設定 */
+}
+
+.date {
+  display: flex; /* フレックスボックスレイアウトを使用 */
+  align-items: center; /* 子要素を縦方向の中央に揃える */
+  gap: 8px; /* 子要素間の間隔を8pxに設定 */
+  margin: 0.8rem 0; /* 上下に0.8remのマージンを設定 */
+  font-size: 1rem; /* フォントサイズを1remに設定 */
+}
+
+@media (max-width: 1000px) {
+  .news {
+    width: calc(100% - 160px); /* 幅を100%から160pxを引いた値に設定 */
+  }
+}
+
 @media (max-width: 640px) {
   .top {
     padding: 120px 16px; /* 上下に120px、左右に16pxのパディングを設定 */
@@ -60,5 +128,10 @@
     align-items: center; /* 子要素を縦方向の中央に揃える */
     justify-content: center; /* 子要素を横方向の中央に揃える */
     z-index: -1; /* 要素を他の要素の背面に配置 */
+  }
+
+  .news {
+    width: calc(100% - 32px); /* 幅を100%から32pxを引いた値に設定 */
+    padding: 16px 24px; /* 上下に16px、左右に24pxのパディングを設定 */
   }
 }
