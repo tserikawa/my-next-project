@@ -1,5 +1,6 @@
 // .module.cssはファイルごとにスタイルを当てることができる
 import styles from "./page.module.css";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -10,7 +11,13 @@ export default function Home() {
           私たちは市場をリードしているグローバルテックカンパニーです。
         </p>
       </div>
-      <img className={styles.bgimg} src="/img-mv.jpg" alt="" />
+      <Image
+        className={styles.bgimg}
+        src="/img-mv.jpg"
+        alt=""
+        width={4000}
+        height={1200}
+      />
     </section>
   );
 }
