@@ -31,22 +31,6 @@
   gap: 16px; /* 子要素間の間隔を16pxに設定 */
 }
 
-.tag {
-  background-color: var(--color-bg-sub); /* 背景色をサブカラーに設定 */
-  padding: 4px 12px; /* 上下に4px、左右に12pxのパディングを設定 */
-  border-radius: var(--border-radius); /* 角丸を変数で設定 */
-  white-space: nowrap; /* テキストを折り返さないように設定 */
-  font-size: 1rem; /* フォントサイズを1remに設定 */
-}
-
-.date {
-  display: flex; /* フレックスボックスレイアウトを使用 */
-  align-items: center; /* 子要素を縦方向の中央に揃える */
-  gap: 8px; /* 子要素間の間隔を8pxに設定 */
-  margin: 0.8rem 0; /* 上下に0.8remのマージンを設定 */
-  font-size: 1rem; /* フォントサイズを1remに設定 */
-}
-
 @media (max-width: 640px) {
   .link {
     display: block;
