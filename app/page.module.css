@@ -47,6 +47,12 @@
   font-size: 1.5rem; /* フォントサイズを1.5remに設定 */
 }
 
+.newsLink {
+  position: absolute; /* 絶対位置を設定 */
+  right: -40px; /* 右端から40pxの位置に配置 */
+  bottom: -40px; /* 下端から40pxの位置に配置 */
+}
+
 .list {
   border-bottom: 1px solid var(--color-border-light); /* 下線を1pxの実線で設定 */
 }
@@ -133,5 +139,12 @@
   .news {
     width: calc(100% - 32px); /* 幅を100%から32pxを引いた値に設定 */
     padding: 16px 24px; /* 上下に16px、左右に24pxのパディングを設定 */
+  }
+
+  .newsLink {
+    position: relative; /* 相対位置を設定 */
+    right: auto; /* 右端の位置を解除 */
+    bottom: auto; /* 下端の位置を解除 */
+    margin-top: 16px;
   }
 }

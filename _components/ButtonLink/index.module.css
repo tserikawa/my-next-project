@@ -1,0 +1,20 @@
+.button {
+  display: block; /* ブロック要素として表示 */
+  padding: 20px 40px; /* 上下に20px、左右に40pxのパディング */
+  border-radius: var(--border-radius); /* 角を丸くするためのボーダー半径 */
+  width: 300px; /* 幅を300pxに設定 */
+  background: url("/arrow-right.svg") no-repeat right 20px center,
+    var(--color-button-primary); /* 背景に右側に矢印アイコンとプライマリカラーを設定 */
+  color: var(--color-text-unpainted); /* テキストカラーを設定 */
+}
+
+.button:hover {
+  opacity: 0.9; /* ホバー時の不透明度を0.9に設定 */
+}
+
+@media (max-width: 640px) {
+  .button {
+    padding: 16px 24px; /* 上下に16px、左右に24pxのパディング */
+    width: 100%; /* 幅を100%に設定 */
+  }
+}
